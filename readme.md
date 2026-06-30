@@ -8,7 +8,7 @@ A browser-based translation tool. No build step, no install — just open `index
 - `script.js` — language list, API calls, UI logic
 
 ## Preview
-![Index Card translator screenshot](screenshot.png)
+![Index Card translator screenshot](image.png)
 
 ## How it satisfies the brief
 | Requirement | Where it's handled |
