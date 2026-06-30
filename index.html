@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lingo Desk — Language Translation Tool</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="wrap">
+
+  <div class="masthead">
+    <div class="eyebrow">Task 1 — Translation desk</div>
+    <h1>Lingo Desk</h1>
+    <p>Type a passage, pick your languages, and let the desk render it across the page.</p>
+  </div>
+
+  <div class="desk">
+    <div class="pane pane-left">
+      <div class="pane-head">
+        <span class="pane-label">Source</span>
+        <select id="srcLang"></select>
+      </div>
+      <textarea id="srcText" placeholder="Enter the text you want translated…" maxlength="1000"></textarea>
+      <div class="toolbar">
+        <span class="char-count"><span id="charCount">0</span> / 1000</span>
+        <div class="action-row">
+          <button class="iconbtn" id="clearBtn" type="button">Clear</button>
+          <button class="iconbtn" id="speakSrcBtn" type="button">Listen</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="swap-col">
+      <button class="swap-btn" id="swapBtn" title="Swap languages" type="button">⇄</button>
+    </div>
+
+    <div class="pane">
+      <div class="pane-head">
+        <span class="pane-label">Target</span>
+        <select id="tgtLang"></select>
+      </div>
+      <div class="output-text placeholder" id="outputText">Your translation will appear here.</div>
+      <div class="toolbar">
+        <span class="char-count">&nbsp;</span>
+        <div class="action-row">
+          <button class="iconbtn" id="copyBtn" type="button" disabled>Copy</button>
+          <button class="iconbtn" id="speakTgtBtn" type="button" disabled>Listen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls-bar">
+    <button class="translate-btn" id="translateBtn" type="button">Translate</button>
+  </div>
+  <div class="status-line" id="statusLine"></div>
+
+  <div class="footnote">Translations via the MyMemory API (free, no key required) · Speech via your browser's built-in voices</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
